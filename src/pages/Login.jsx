@@ -82,7 +82,7 @@ function Login() {
       if (menu === "로그인") {
         postLogin(data).then((res) => res.status === 200 && navigate("/todo"));
       } else {
-        postSignup(data).then((res) => res.status === 200 && navigate("/todo"));
+        postSignup(data).then((res) => res.status === 201 && navigate("/todo"));
       }
     }
   };
